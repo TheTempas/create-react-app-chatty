@@ -96,11 +96,6 @@ class App extends Component {
       </div>
     );
   }
-
-// <MessageList /> takes information from this.state that it will need for its render function
-
-// Bind: takes a function, then assigns it an object, when that function is running if it calls this
-// for example this.setState
 }
 
 export default App;

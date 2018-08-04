@@ -5,7 +5,7 @@ class Message extends Component {
 
     if (this.props.type === "postMessage") {
       const regexep = /(jpg|png|gif)/
-      const content = this.props.content.match(regexep) ? <img src={this.props.content} alt="Image"/> : this.props.content ;
+      const content = this.props.content.match(regexep) ? <img src={this.props.content} alt="Content"/> : this.props.content ;
         return (
           <div className="message">
             <span className="message-username" style={{color: this.props.color}}>{this.props.username}</span>
