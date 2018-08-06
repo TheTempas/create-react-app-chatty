@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 
 import uuidv1 from 'uuid/v1';
 
-import MessageList from './components/MessageList';
+import IncomingInfoList from './components/IncomingInfoList';
 import ChatBar from './components/ChatBar';
 
 import './styles/app.css';
@@ -91,7 +91,7 @@ class App extends Component {
           <a href="/" className="navbar-brand">Chatty</a>
           <span>{this.state.numberUsers} users online</span>
         </nav>
-        <MessageList messages={this.state.messages} />
+        <IncomingInfoList messages={this.state.messages} />
         <ChatBar currentUser={this.state.currentUser} setCurrentUser={this.setCurrentUser} addNewMessage={this.addNewMessage}/>
       </div>
     );
